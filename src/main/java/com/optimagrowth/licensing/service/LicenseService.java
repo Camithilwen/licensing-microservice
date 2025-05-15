@@ -22,7 +22,7 @@ public class LicenseService {
     }
 
     public String createLicense(License license, String organizationId) {
-        String responseMEssage = null;
+        String responseMessage = null;
         if(license != null) {
             license.setOrganizationId(organizationId);
             responseMessage = String.format("This is the post and the object is: %s", license.toString());
